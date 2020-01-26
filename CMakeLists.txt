@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory(benchmark)
 
-add_executable(EXOSIMS_benchmark keplerSTM_benchmarks.cpp NEW_KeplerSTM_C.h NEW_KeplerSTM_C.cpp KeplerSTM_C.h KeplerSTM_C.c)
+add_executable(EXOSIMS_benchmark keplerSTM_benchmarks.cpp)
 target_link_libraries(EXOSIMS_benchmark benchmark::benchmark)
