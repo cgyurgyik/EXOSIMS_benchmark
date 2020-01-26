@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Blog_CMake_GoogleBenchmark" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/benchmark" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/benchmark/googletest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/benchmark" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/benchmark/googletest" vcs="Git" />
+  </component>
+</project>
