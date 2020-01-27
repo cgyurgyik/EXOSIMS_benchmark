@@ -121,7 +121,7 @@ int KeplerSTM_C (double x0[], double dt, double mu, double x1[], double epsmult)
     return 0;
 }
 
-int NEW_KeplerSTM_C (std::array<double, 6>& x0, double dt, double mu, std::array<double, 6>& x1,
+int NEW_KeplerSTM_C (const std::array<double, 6>& x0, double dt, double mu, std::array<double, 6>& x1,
                      double epsmult, int convergence_limit) {
     /* Initialize orbit values*/
     const std::array<double, 3> r0 = {x0[0],x0[1],x0[2]};
