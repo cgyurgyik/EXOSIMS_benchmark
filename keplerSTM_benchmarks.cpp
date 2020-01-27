@@ -158,7 +158,7 @@ int NEW_KeplerSTM_C (const std::array<double, 6>& x0, double dt, double mu, std:
     double u = 0;
     double q, U0w2, U1w2, U, U0, U1, U2, U3, r, A, B, cf, cfprev;
 
-    while ((std::fabs(t - dt) > epsmult * tol) && (counter1 < convergence_limit)){
+    while ((std::fabs(t - dt) > epsmult * tol) && (counter1 < convergence_limit)) {
         q = beta * u * u / (1 + beta * u * u);
 
         /* initialize continued fractions */
@@ -173,7 +173,7 @@ int NEW_KeplerSTM_C (const std::array<double, 6>& x0, double dt, double mu, std:
         n = 4.0 * b * (c - a);
 
         /* loop until convergence of continued fraction*/
-        while ((std::fabs(cf - cfprev) > epsmult * EPS(cf)) && (counter2 < convergence_limit)){
+        while ((std::fabs(cf - cfprev) > epsmult * EPS(cf)) && (counter2 < convergence_limit)) {
             k = -k;
             l += 2.0;
             d += 4.0 * l;
